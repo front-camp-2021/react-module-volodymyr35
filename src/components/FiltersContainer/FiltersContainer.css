@@ -1,0 +1,9 @@
+.filters {
+  width: 30vw;
+  max-width: 560px;
+  min-height: 1520px;
+  padding: 20px 42px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}

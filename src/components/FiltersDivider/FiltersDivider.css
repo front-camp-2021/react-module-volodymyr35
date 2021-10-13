@@ -1,0 +1,7 @@
+.filters__divider {
+  width: 100%;
+  margin: 28px 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+}
