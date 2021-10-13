@@ -1,0 +1,43 @@
+.filters {
+  width: 30vw;
+  max-width: 560px;
+  min-height: 1520px;
+  padding: 20px 42px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filters__section {
+  max-width: 375px;
+}
+
+.filters__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.filters__divider {
+  width: 100%;
+  margin: 28px 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.filters__list li {
+  cursor: pointer;
+}
+
+.filters__list li:not(li:first-child):not(li:last-child) {
+  padding: 10px 0;
+}
+
+.filters__list li:first-child {
+  padding-bottom: 10px;
+}
+
+.filters__list li:last-child {
+  padding-top: 10px;
+}
