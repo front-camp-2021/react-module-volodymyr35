@@ -1,5 +1,5 @@
-import './CardList.css';
 import Card from '../Card';
+import './CardList.css';
 
 function CardList({ data = [] }) {
   return (

@@ -17,3 +17,46 @@ ul {
 .App {
   padding: 10px;
 }
+
+.container {
+  display: flex;
+}
+
+.subtitle-with-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+.subtitle-with-button > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  align-self: flex-end;
+}
+
+.subtitle-with-button > button {
+  padding: 2px 14px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filters__clear-all {
+  width: 100%;
+  font-size: 18px;
+  padding: 17px;
+  text-transform: uppercase;
+  background-color: #6f64f8;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 28px;
+}
+
+button.wishlist-btn {
+  background-color: #6f64f8;
+  color: #fff;
+}

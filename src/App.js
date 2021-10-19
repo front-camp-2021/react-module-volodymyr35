@@ -1,13 +1,18 @@
-import './App.css';
-import CardList from './components/CardList';
+import Header from './components/Header';
 import FiltersContainer from './components/FiltersContainer';
-import { products } from './fixtures/products';
+import ProductsContainer from './components/ProductsContainer';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <FiltersContainer />
-      <CardList data={products} />
+      <Header />
+      <div className="container">
+        <FiltersContainer />
+        <ProductsContainer />
+      </div>
+      <Footer />
     </div>
   );
 }
