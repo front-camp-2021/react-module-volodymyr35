@@ -24,3 +24,7 @@
   background-color: transparent;
   border: none;
 }
+
+.search-bar__btn > i {
+  font-size: 22px;
+}

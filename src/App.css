@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,6 +6,10 @@
 
 body {
   font-family: Montserrat, sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {
@@ -35,7 +39,8 @@ ul {
   align-self: flex-end;
 }
 
-.subtitle-with-button > button {
+.subtitle-with-button > button,
+.wishlist-btn {
   padding: 2px 14px;
   background-color: #fff;
   border-radius: 8px;
@@ -56,7 +61,95 @@ ul {
   margin-top: 28px;
 }
 
-button.wishlist-btn {
+.wishlist-btn {
+  display: inline-flex;
+  align-items: center;
   background-color: #6f64f8;
-  color: #fff;
+}
+
+/* ----- Responsive ------ */
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .filters__card {
+    display: flex;
+    min-height: unset;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .filters__divider {
+    display: none;
+  }
+
+  .filters__card > section {
+    width: calc((100% / 3) - 20px);
+  }
+
+  .filters__card > section:not(section:last-child) {
+    padding-right: 20px;
+    border-right: 1px solid #ededed;
+  }
+
+  .main {
+    width: 100%;
+    max-width: initial;
+    margin-top: 28px;
+  }
+
+  .card__btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters__card {
+    display: none;
+  }
+
+  .filters__clear-all {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pagination a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .pagination__options a:nth-child(n + 7) {
+    display: none;
+  }
+
+  .card__inner {
+    padding: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header__content > h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__content > h1 {
+    font-size: 28px;
+  }
 }

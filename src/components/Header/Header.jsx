@@ -1,5 +1,6 @@
-import { ReactComponent as Logo } from '../../icons/logo.svg';
-import './Header.css';
+import { ReactComponent as Logo } from "../../icons/logo.svg";
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -10,15 +11,13 @@ function Header() {
           <h1>Online Store</h1>
         </div>
         <nav className="bread-crumbs">
-          <a href="#">
+          <Link to="/">
             <i className="bi bi-house-door" />
-          </a>
+          </Link>
           <i className="bi bi-chevron-double-right" />
-          <a href="#">eCommerce</a>
+          <Link to="/wishlist">WishList</Link>
           <i className="bi bi-chevron-double-right" />
-          <a className="active" href="#">
-            Electronics
-          </a>
+          <Link to="/cart">Cart</Link>
         </nav>
       </div>
     </div>
