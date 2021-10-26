@@ -1,0 +1,25 @@
+.filters__section {
+  max-width: 375px;
+}
+
+.filters__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.filters__list li {
+  cursor: pointer;
+}
+
+.filters__list li:not(li:first-child):not(li:last-child) {
+  padding: 10px 0;
+}
+
+.filters__list li:first-child {
+  padding-bottom: 10px;
+}
+
+.filters__list li:last-child {
+  padding-top: 10px;
+}

@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  padding: 28px 20px 0px;
+  background-color: #fff;
+}
+
+.header__inner {
+  max-width: 1844px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__content > img {
+  width: 91px;
+  height: 72px;
+}
+
+.header__content > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #7e72f2;
+  margin-left: 22px;
+}
+
+.bread-crumbs {
+  display: inline-flex;
+  width: 290px;
+  justify-content: space-between;
+  margin-top: 34px;
+  margin-bottom: 44px;
+}
+
+.bread-crumbs a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7e72f2;
+}
+
+/* .bread-crumbs a.active {
+  pointer-events: none;
+  color: #000;
+} */
