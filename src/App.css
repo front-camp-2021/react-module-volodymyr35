@@ -29,8 +29,7 @@ ul {
 .subtitle-with-button {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 28px;
+  margin: 28px 0;
 }
 
 .subtitle-with-button > h3 {
@@ -48,19 +47,6 @@ ul {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.filters__clear-all {
-  width: 100%;
-  font-size: 18px;
-  padding: 17px;
-  text-transform: uppercase;
-  background-color: #6f64f8;
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  margin-top: 28px;
-}
-
 .wishlist-btn {
   display: inline-flex;
   align-items: center;
@@ -71,32 +57,6 @@ ul {
 @media screen and (max-width: 1200px) {
   .container {
     flex-direction: column;
-  }
-
-  .filters {
-    width: 100%;
-    max-width: unset;
-  }
-
-  .filters__card {
-    display: flex;
-    min-height: unset;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .filters__divider {
-    display: none;
-  }
-
-  .filters__card > section {
-    width: calc((100% / 3) - 20px);
-  }
-
-  .filters__card > section:not(section:last-child) {
-    padding-right: 20px;
-    border-right: 1px solid #ededed;
   }
 
   .main {

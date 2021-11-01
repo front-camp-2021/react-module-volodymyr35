@@ -1,6 +1,11 @@
-import './Card.css';
+import { useDispatch } from "react-redux";
+import { addItem, toggleItem } from "../../redux/wishlistReducer";
+import "./Card.css";
 
-function Card({ price, rating, category, title, images = [] }) {
+function Card({ item = {} }) {
+  const { price, rating, category, title, images = [] } = item;
+  const dispatch = useDispatch();
+
   return (
     <div className="card">
       <div className="card__inner" data-element="body">
@@ -20,7 +25,10 @@ function Card({ price, rating, category, title, images = [] }) {
         </div>
       </div>
       <div className="card__actions">
-        <button className="card__btn">
+        <button
+          className="card__btn"
+          onClick={() => dispatch(toggleItem(item))}
+        >
           <i className="bi bi-heart os-product-wish-icon"></i>&nbsp;Wishlist
         </button>
         <button className="card__btn card__btn--primary">
