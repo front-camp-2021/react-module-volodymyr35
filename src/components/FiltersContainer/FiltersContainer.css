@@ -36,3 +36,13 @@
     border-right: 1px solid #ededed;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .filters__card {
+    display: none;
+  }
+
+  .filters__clear-all {
+    margin-top: 28px;
+  }
+}

@@ -4,10 +4,9 @@ const initialState = {
   data: [],
 };
 
-export const addItem = createAction("wishlist/add");
-export const removeItem = createAction("wishlist/remove");
-export const toggleWishlistItem = createAction("wishlist/toggle");
-export const removeAllItems = createAction("wishlist/removeAll");
+export const addItem = createAction("cart/add");
+export const removeItem = createAction("cart/remove");
+export const toggleCartItem = createAction("cart/toggle");
 
 export default createReducer(initialState, (builder) => {
   builder
@@ -17,7 +16,7 @@ export default createReducer(initialState, (builder) => {
     .addCase(removeItem, (state, { payload }) => {
       state.data = state.data.filter((item) => item.id !== payload.id);
     })
-    .addCase(toggleWishlistItem, (state, { payload }) => {
+    .addCase(toggleCartItem, (state, { payload }) => {
       const isItemPresent = state.data.find((item) => item.id === payload.id);
 
       if (isItemPresent) {
@@ -25,8 +24,5 @@ export default createReducer(initialState, (builder) => {
       } else {
         state.data.push(payload);
       }
-    })
-    .addCase(removeAllItems, (state) => {
-      state.data = [];
     });
 });

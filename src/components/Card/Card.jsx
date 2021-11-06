@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux";
-import { addItem, toggleItem } from "../../redux/wishlistReducer";
+import { addItem, toggleWishlistItem } from "../../redux/wishlistReducer";
+import { toggleCartItem } from "../../redux/cartReducer";
+
 import "./Card.css";
 
 function Card({ item = {} }) {
@@ -27,11 +29,14 @@ function Card({ item = {} }) {
       <div className="card__actions">
         <button
           className="card__btn"
-          onClick={() => dispatch(toggleItem(item))}
+          onClick={() => dispatch(toggleWishlistItem(item))}
         >
           <i className="bi bi-heart os-product-wish-icon"></i>&nbsp;Wishlist
         </button>
-        <button className="card__btn card__btn--primary">
+        <button
+          className="card__btn card__btn--primary"
+          onClick={() => dispatch(toggleCartItem(item))}
+        >
           <i className="bi bi-box-seam os-product-shopping-bag"></i>&nbsp;Add to
           cart
         </button>
