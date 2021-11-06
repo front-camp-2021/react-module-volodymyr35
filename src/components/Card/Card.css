@@ -104,3 +104,15 @@
 .card__icon {
   display: inline-block;
 }
+
+@media screen and (max-width: 1200px) {
+  .card__btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card__inner {
+    padding: 10px;
+  }
+}

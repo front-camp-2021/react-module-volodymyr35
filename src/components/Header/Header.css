@@ -40,7 +40,14 @@
   color: #7e72f2;
 }
 
-/* .bread-crumbs a.active {
-  pointer-events: none;
-  color: #000;
-} */
+@media screen and (max-width: 576px) {
+  .header__content > h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__content > h1 {
+    font-size: 28px;
+  }
+}

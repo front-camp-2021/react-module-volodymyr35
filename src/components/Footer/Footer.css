@@ -43,3 +43,15 @@
   border-radius: 25px;
   background-color: #ededed;
 }
+
+@media screen and (max-width: 576px) {
+  .pagination a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .pagination__options a:nth-child(n + 7) {
+    display: none;
+  }
+}

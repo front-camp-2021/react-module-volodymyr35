@@ -1,7 +1,9 @@
-import FiltersList from '../FiltersList';
-import FiltersDivider from '../FiltersDivider';
-import { categoryFilterConfig, brandFilterConfig } from './config';
-import './FiltersContainer.css';
+import FiltersList from "../FiltersList";
+import FiltersDivider from "../FiltersDivider";
+import Button from "../Button";
+
+import { categoryFilterConfig, brandFilterConfig } from "./config";
+import "./FiltersContainer.css";
 
 function FiltersContainer() {
   return (
@@ -18,7 +20,7 @@ function FiltersContainer() {
         <FiltersDivider />
         <FiltersList title="Brand" list={brandFilterConfig} />
       </div>
-      <button className="filters__clear-all">Clear all filters</button>
+      <Button variant="fullWidth">Clear all filters</Button>
     </div>
   );
 }
